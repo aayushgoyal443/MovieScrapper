@@ -146,7 +146,7 @@ const getMovieInfo = async ($, movieIdx) => {
 (async () => {
 
 	const id_arr = [];	// this contains all the Movie Indexes
-	/*
+
 	var url1 = "http://www.cgv.co.kr/movies";
 	await axios
 		.get(url1, { "Content-Type": "application/json" })
@@ -173,7 +173,7 @@ const getMovieInfo = async ($, movieIdx) => {
 				}
 			);
 		});
-	*/
+
 
 	const url2 = "http://www.cgv.co.kr/common/ajax/movies.aspx/GetMovieMoreList?listType=1&orderType=1&filterType=1";
 	await axios
@@ -186,7 +186,6 @@ const getMovieInfo = async ($, movieIdx) => {
 			});
 		});
 
-	/*
 	const defaultURL = "http://m.cgv.co.kr/WebAPP/MovieV4/ajaxMovie.aspx";
 	const pageRow = 20;
 	const mtype = "now";
@@ -217,20 +216,8 @@ const getMovieInfo = async ($, movieIdx) => {
 				id_arr.push(...arr);
 			});
 	}
-	*/
 
 	// console.log(id_arr);	
-
-	// console.log("starting to scrape");
-	// for (let i=0;i< id_arr.length; i++){
-	// 	let url = "http://www.cgv.co.kr/movies/detail-view/?midx=" + id_arr[i];
-	// 	await axios.get(url).then(({ data }) => {
-	// 		const $ = cheerio.load(data);
-	// 		cgv_list.push(getMovieInfo($, id_arr[i]));
-	// 	});
-	// 	console.log(i+1);
-	// 	if (i==0) break;
-	// }
 
 	const cgv_list = await Promise.all(
         id_arr.map(async (id, i) => {
