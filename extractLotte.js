@@ -34,10 +34,8 @@ const getGenres = (genres) => {
 	return genre_list;
 };
 
-
-
-(async () => {
-
+//현재 상영작 영화 정보를 가져오는 함수
+const getMovie = async () => {
 	const url = "https://www.lottecinema.co.kr/LCWS/Movie/MovieData.aspx";
 
 	const dic = {
@@ -55,13 +53,14 @@ const getGenres = (genres) => {
 		memberOnNo: "",
 	};
 
+	// axios 를 이용해 JSON 형식으로 정보를 받아온 뒤, 영화 아이디만 리턴해준다.
+	// 현재 상영작 영화 아이디 가져오기
 	const nowShowingMovies = await axios
 		.post(url, "ParamList=" + JSON.stringify(dic))
 		.then((data) => {
 			const info = [];
 			data.data.Movies.Items.map((movie) => {
-				var nameIdx = movie.RepresentationMovieCode;
-				if (!isNaN(nameIdx)) info.push(parseInt(nameIdx));
+				info.push(movie.RepresentationMovieCode);
 			});
 			return info;
 		});
@@ -75,17 +74,25 @@ const getGenres = (genres) => {
 		.then((data) => {
 			const info = [];
 			data.data.Movies.Items.map((movie) => {
-				var nameIdx = movie.RepresentationMovieCode;
-				if (!isNaN(nameIdx)) info.push(parseInt(nameIdx));
+				info.push(movie.RepresentationMovieCode);
 			});
 			return info;
 		});
 
-	movieIDs = [...nowShowingMovies, ...comingSoonMovies];
+	return [...nowShowingMovies, ...comingSoonMovies];
+};
 
-	// console.log(movieIDs);
+(async () => {
+
+
+	// 영화 상세정보를 반환하는 url
+	const url = "https://www.lottecinema.co.kr/LCWS/Movie/MovieData.aspx";
+
+	// 현재 상영중인 영화들의 아이디를 가져온다.
+	const movieIDs = await getMovie().catch(console.log);
 
 	console.log("Extracted the movie names...");
+	// console.log(movieIDs);
 
 	console.log("Starting to extract the information related to the movies...");
 
@@ -107,8 +114,9 @@ const getGenres = (genres) => {
 			// post 방식으로 영화 상세정보를 불러온다.
 			const movieDetail = await axios
 				.post(url, "ParamList=" + JSON.stringify(dic))
-				.then(({data}) => {
+				.then(({ data }) => {
 					console.log(data);
+					
 					// const movie_info = data.Movie;
 
 					// 트레일러 중, 메인 트레일러를 받아온다. 메인 트레일러가 없다면 다른 트레일러를 받아오도록 만들었다.
