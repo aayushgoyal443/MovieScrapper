@@ -91,10 +91,10 @@ const getMovie = async () => {
 	// 현재 상영중인 영화들의 아이디를 가져온다.
 	const movieIDs = await getMovie().catch(console.log);
 
-	console.log("Extracted the movie names...");
+	// console.log("Extracted the movie names...");
 	// console.log(movieIDs);
 
-	console.log("Starting to extract the information related to the movies...");
+	// console.log("Starting to extract the information related to the movies...");
 
 	const movieDetails = [];
 
@@ -122,24 +122,21 @@ const getMovie = async () => {
 					// 트레일러 중, 메인 트레일러를 받아온다. 메인 트레일러가 없다면 다른 트레일러를 받아오도록 만들었다.
 					// 트레일러가 없는 경우는 "" 을 반환하도록 했다.
 					// backdrop path 에 데이터를 넣기위해 trailer 의 초기 이미지를 받아온다.
-					// console.log(data.Trailer);
+					// console.log(data.Trailer.Items);
 
-					// const trailer_infos = data.Trailer.Items.filter((trailer) => {
-					// 	if (
-					// 		trailer.ImageDivisionCode == 2 &&
-					// 		trailer.MediaTitle.includes("예고편")
-					// 	)
-					// 		return true;
-					// });
-					// let trailer_info = {};
-					// if (trailer_infos.length !== 0) {
-					// 	trailer_info = trailer_infos.find((trailer) => {
-					// 		return trailer.MediaTitle.includes("메인");
-					// 	});
-					// 	trailer_info = trailer_info ? trailer_info : trailer_infos[0];
-					// } else {
-					// 	trailer_info = { ImageURL: "", MediaURL: "" };
-					// }
+					const trailer_infos = data.Trailer.Items.filter((trailer) => {
+						if ( trailer.ImageDivisionCode == 2 && trailer.MediaTitle.includes("예고편") )
+							return true;
+					});
+					let trailer_info = {};
+					if (trailer_infos.length !== 0) {
+						trailer_info = trailer_infos.find((trailer) => {
+							return trailer.MediaTitle.includes("메인");
+						});
+						trailer_info = trailer_info ? trailer_info : trailer_infos[0];
+					} else {
+						trailer_info = { ImageURL: "", MediaURL: "" };
+					}
 
 					// tmp 의 object 에 정한 형식대로 데이터를 넣는다.
 					const tmp = {
@@ -149,7 +146,7 @@ const getMovie = async () => {
 						mediaType: "movie",
 						runTime: movie_info.PlayTime, // 상영시간
 						posterURL: movie_info.PosterURL, // 포스터 이미지
-						// trailerURL: trailer_info.MediaURL, // 트레일러
+						trailerURL: trailer_info.MediaURL, // 트레일러
 						ageLimit: getAgeLimit(movie_info.ViewGradeNameKR), // 연령 제한
 						synopsis: htmlToText(movie_info.SynopsisKR), // 시놉시스
 						imdbScore: 0,
@@ -172,7 +169,9 @@ const getMovie = async () => {
 		})
 	);
 
-	console.log(movieDetails);
-	console.log("Movie details extraction also complete...");
+	movieDetails.forEach(mv => {
+		console.log(mv);
+	});
+	// console.log("Movie details extraction also complete...");
 
 })();
