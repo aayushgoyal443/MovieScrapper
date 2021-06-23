@@ -1,5 +1,5 @@
 const axios = require("axios");
-const htmlToText = require("html-to-text");
+const {htmlToText} = require("html-to-text");
 // 롯데시네마의 영화 상세 정보를 불러오는 코드
 
 // 나이 제한 정한 형식에 맞춰주는 함수
@@ -102,7 +102,7 @@ const getMovie = async () => {
 		movieIDs.map(async (movieID) => {
 			// console.log(movieID);
 			const dic = {
-				MethodName: "GetMovieDetailToBe",
+				MethodName: "GetMovieDetailTOBE",
 				channelType: "HO",
 				osType: "Chrome",
 				osVersion:
@@ -115,9 +115,9 @@ const getMovie = async () => {
 			const movieDetail = await axios
 				.post(url, "ParamList=" + JSON.stringify(dic))
 				.then(({ data }) => {
-					console.log(data);
 					
-					// const movie_info = data.Movie;
+					const movie_info = data.Movie;
+					// console.log(movie_info);
 
 					// 트레일러 중, 메인 트레일러를 받아온다. 메인 트레일러가 없다면 다른 트레일러를 받아오도록 만들었다.
 					// 트레일러가 없는 경우는 "" 을 반환하도록 했다.
@@ -142,29 +142,29 @@ const getMovie = async () => {
 					// }
 
 					// tmp 의 object 에 정한 형식대로 데이터를 넣는다.
-					// const tmp = {
-					// 	_id: movieID, // 영화 고유 ID (대표 ID)
-					// 	contentKrName: movie_info.MovieNameKR, // 영화 이름
-					// 	contentOrgName: movie_info.MovieNameUS, // 영화 영어 이름(original 데이터가 없어 일단 영어로 받아왔다.)
-					// 	mediaType: "movie",
-					// 	runTime: movie_info.PlayTime, // 상영시간
-					// 	posterURL: movie_info.PosterURL, // 포스터 이미지
-					// 	// trailerURL: trailer_info.MediaURL, // 트레일러
-					// 	ageLimit: getAgeLimit(movie_info.ViewGradeNameKR), // 연령 제한
-					// 	synopsis: htmlToText(movie_info.SynopsisKR), // 시놉시스
-					// 	imdbScore: 0,
-					// 	tmdbScore: 0,
-					// 	companyID: 2,
-					// 	cinemaScore: movie_info.ViewEvaluation
-					// 		? movie_info.ViewEvaluation
-					// 		: 0,
-					// 	seasonCount: 0,
-					// 	genres: getGenres(movie_info), // 장르 (배열)
-					// 	offers: [],
-					// 	releaseDate: getReleaseDate(movie_info.ReleaseDate), // 개봉일
-					// 	bookingRate: movie_info.BookingRate,
-					// };
-					// return tmp;
+					const tmp = {
+						_id: movieID, // 영화 고유 ID (대표 ID)
+						contentKrName: movie_info.MakingNationNameKR, // 영화 이름
+						contentOrgName: movie_info.MakingNationNameUS, // 영화 영어 이름(original 데이터가 없어 일단 영어로 받아왔다.)
+						mediaType: "movie",
+						runTime: movie_info.PlayTime, // 상영시간
+						posterURL: movie_info.PosterURL, // 포스터 이미지
+						// trailerURL: trailer_info.MediaURL, // 트레일러
+						ageLimit: getAgeLimit(movie_info.ViewGradeNameKR), // 연령 제한
+						synopsis: htmlToText(movie_info.SynopsisKR), // 시놉시스
+						imdbScore: 0,
+						tmdbScore: 0,
+						companyID: 2,
+						cinemaScore: movie_info.ViewEvaluation
+							? movie_info.ViewEvaluation
+							: 0,
+						seasonCount: 0,
+						genres: getGenres(movie_info), // 장르 (배열)
+						offers: [],
+						releaseDate: getReleaseDate(movie_info.ReleaseDate), // 개봉일
+						bookingRate: movie_info.BookingRate,
+					};
+					return tmp;
 				})
 				.catch(console.log);
 			// 영화 ID 가 AD 인 경우가 있는데 이는 더미 데이터이므로 제외하고 넣어준다.
@@ -172,7 +172,7 @@ const getMovie = async () => {
 		})
 	);
 
-	// console.log(movieDetails);
+	console.log(movieDetails);
 	console.log("Movie details extraction also complete...");
 
 })();
