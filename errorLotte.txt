@@ -1,0 +1,338 @@
+Extracted the movie names...
+Starting to extract the information related to the movies...
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
+{ IsOK: 'false',
+  ResultMessage: '요청하신 서비스명이 존재하지 않습니다.',
+  ResultCode: null,
+  EventResultYn: null }
